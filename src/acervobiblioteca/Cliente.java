@@ -2,12 +2,16 @@ package acervobiblioteca;
 
 public class Cliente extends Pessoa{
 	private long cpf;
-	private int matricula;
+	private String login; //mudei matricula para login
 	
 	public void retirarLivro() {
 		
 	}
 	public void devolverLivro() {
+		
+	}
+	
+	public void consultarAcervo() { //adicionei
 		
 	}
 	public long getCpf() {
@@ -16,11 +20,11 @@ public class Cliente extends Pessoa{
 	public void setCpf(long cpf) {
 		this.cpf = cpf;
 	}
-	public int getMatricula() {
-		return matricula;
+	public String getLogin() {
+		return login;
 	}
-	public void setMatricula(int matricula) {
-		this.matricula = matricula;
+	public void setLogin(String login) {
+		this.login = login;
 	}
 	
 	
