@@ -1,4 +1,4 @@
-package acervobiblioteca;
+package testeprojeto;
 
 public class Cliente extends Pessoa{
 	private int cpf;

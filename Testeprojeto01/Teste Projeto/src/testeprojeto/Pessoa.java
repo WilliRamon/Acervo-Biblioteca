@@ -1,4 +1,4 @@
-package acervobiblioteca;
+package testeprojeto;
 
 public abstract class Pessoa {
 	private String nome;
@@ -44,4 +44,3 @@ public abstract class Pessoa {
 	}
 	
 }
-
