@@ -4,6 +4,10 @@ public class Cliente extends Pessoa{
 	private long cpf;
 	private int matricula;
 	
+	public void consultarAcervo() {
+		
+	}
+	
 	public void retirarLivro() {
 		
 	}

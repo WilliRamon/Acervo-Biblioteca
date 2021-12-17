@@ -6,6 +6,8 @@ public abstract class Pessoa {
 	private long telefone;
 	private String endereco;
 	
+	
+	
 	private void fazerAniversario() {
 		this.setIdade(getIdade() + 1);
 	}

@@ -7,6 +7,7 @@ public abstract class Exemplar {
 	private String editora;
 	private int anoPublicacao;
 	private int codigo;
+	private int quantidadeEstoque;
 	
 	
 	public void cadastrar() {
@@ -55,6 +56,13 @@ public abstract class Exemplar {
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
+	public int getQuantidadeEstoque() {
+		return quantidadeEstoque;
+	}
+	public void setQuantidadeEstoque(int quantidadeEstoque) {
+		this.quantidadeEstoque = quantidadeEstoque;
+	}
+	
 	
 	
 }
