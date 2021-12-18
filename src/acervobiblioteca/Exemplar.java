@@ -1,68 +1,35 @@
 package acervobiblioteca;
 
 public abstract class Exemplar {
-	private String titulo;
-	private String autor;
-	private int paginas;
-	private String editora;
-	private int anoPublicacao;
-	private int codigo;
-	private int quantidadeEstoque;
+	String exemplar;
+	int numCadastro;
 	
 	
-	public void cadastrar() {
+	public Exemplar (String exemplar, int numCadastro) {
+		super();
+		this.exemplar = exemplar;
+		this.numCadastro = numCadastro;
+	}
+	public abstract void titulo();
 		
-	}
-	public void excluir() {
 		
+	public String getExemplar() {
+		return exemplar;
 	}
-	public void consultar() {
-		
+
+	public void setExemplar(String exemplar) {
+		this.exemplar = exemplar;
 	}
-	
-	public String getTitulo() {
-		return titulo;
+
+	public int getNumCadastro() {
+		return numCadastro;
 	}
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+
+	public void setNumCadastro(int numCadastro) {
+		this.numCadastro = numCadastro;
 	}
-	public String getAutor() {
-		return autor;
+
+	public String toString() {
+		return this.exemplar + " | nº de série: " + this.numCadastro;			
 	}
-	public void setAutor(String autor) {
-		this.autor = autor;
-	}
-	public int getPaginas() {
-		return paginas;
-	}
-	public void setPaginas(int paginas) {
-		this.paginas = paginas;
-	}
-	public String getEditora() {
-		return editora;
-	}
-	public void setEditora(String editora) {
-		this.editora = editora;
-	}
-	public int getAnoPublicacao() {
-		return anoPublicacao;
-	}
-	public void setAnoPublicacao(int anoPublicacao) {
-		this.anoPublicacao = anoPublicacao;
-	}
-	public int getCodigo() {
-		return codigo;
-	}
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
-	}
-	public int getQuantidadeEstoque() {
-		return quantidadeEstoque;
-	}
-	public void setQuantidadeEstoque(int quantidadeEstoque) {
-		this.quantidadeEstoque = quantidadeEstoque;
-	}
-	
-	
-	
 }
